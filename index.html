@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<!--Подключаем внешний файл сл стилями-->
-	<link rel="stylesheet" href="./CSS/style.css">
+	<link rel="stylesheet" href="./style.css">
 	<!--Кодировка страницы-->
 	<meta charset="UTF-8">
 	<!--Адаптив-->
@@ -11,6 +11,25 @@
 	<title>Contact form</title>
 </head>
 <body>
-
+	<form class="wrapper" action="">
+		<h1>Contact form</h1>
+		<p>Please fill in you information and we'll be sending your order.</p>
+		<article class="labelWrapper">
+			<label for="userName" class="click">Your name
+				<input type="text" id="userName">
+			</label>
+			<label for="userEmail" class="click">Your email
+				<input type="text" id="userEmail">
+			</label>
+			<label for="phone" class="click">Phone*
+				<input type="text" id="phone">
+			</label>
+			<label for="messageSubject" class="click">Message subject*
+				<input type="text" id="messageSubject">
+			</label>
+			<label for="message" class="click">Message*
+				<input type="text" id="message"></label>
+		</article>
+	</form>
 </body>
 </html>
