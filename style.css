@@ -18,10 +18,14 @@ body {
 }
 
 .wrapper {
-	min-width: 800px;
-	min-height: 515px;
-	box-shadow: 0 0 10px 10px #fff;
+	max-width: 1000px;
+	box-shadow: 0 0 10px 5px #fff;
 	color: #fff;
+	padding: 40px 35px;
+}
+
+.title_h1 {
+	font-weight: bold;
 }
 
 .labelWrapper {
