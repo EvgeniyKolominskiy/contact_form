@@ -1,4 +1,5 @@
 @import url('./assets/css/reset.css');
+@import url('./assets/css/fonts.css');
 
 * {
 	-webkit-box-sizing: border-box;
@@ -6,29 +7,104 @@
 	box-sizing: border-box;
 }
 
+:root {
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+}
+
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	background-image: url("./assets/images/space.webp"), url("./assets/images/space.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .wrapper {
-	max-width: 1000px;
+	max-width: 900px;
+	min-width: 300px;
+	width: 100%;
+
 	box-shadow: 0 0 10px 5px #fff;
 	color: #fff;
-	padding: 40px 35px;
-}
 
-.title_h1 {
-	font-weight: bold;
+	padding: 40px 35px;
+	margin: 5vmin 10px;
 }
 
 .labelWrapper {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.information {
+	margin: 20px 0 20px 10px;
+	line-height: 1.5;
+}
+
+.labelWrapper:last-of-type {
+	justify-content: flex-end;
+}
+
+.title_h1 {
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-left: 10px;
+}
+
+.labelWrapper input, .labelWrapper textarea, .labelWrapper select {
+	margin: 5px 10px;
+	padding: 5px 15px;
+	font-size: 1em;
+	width: 180px;
+	flex-grow: 1;
+}
+
+#userPhoneThree {
+	flex-grow: 2;
+}
+
+.labelWrapper input, .labelWrapper select {
+	height: 30px;
+}
+
+.labelWrapper textarea {
+	height: 90px;
+}
+
+.labelWrapper > input[name='userPhone'] {
+	width: 125px;
+}
+
+input:last-child[name='userPhone'] {
+	width: 120px;
+}
+
+.clickForm {
+	margin-left: 10px;
+	line-height: 45px;
+	flex-basis: 160px;
+}
+
+#buttonForm {
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: bold;
+
+	background: transparent;
+	color: #fff;
+	border-color: #fff;
+
+	height: 35px;
+	margin: 5px 10px;
+	width: calc(100% - 190px);
+	min-width: 210px;
+}
+
+.wrapper > hr {
+	margin: 10px;
 }
